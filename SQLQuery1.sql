@@ -47,6 +47,7 @@ CREATE TABLE Buy(
 	Product_id INT FOREIGN KEY REFERENCES Product(Product_id),
 	Totle_price INT,
 	[User_id] INT FOREIGN KEY REFERENCES [User]([User_id]),
+	[Count] INT,
 	PRIMARY KEY (Buy_id)
 );
 
